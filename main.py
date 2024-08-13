@@ -11,7 +11,9 @@ model = YOLO('./models/best.pt')
 model.to(device)
 
 # 开启摄像头捕捉
-cap = cv2.VideoCapture("Learn American Sign Language Letters.mp4")
+# cap = cv2.VideoCapture("Learn American Sign Language Letters.mp4")
+
+cap = cv2.VideoCapture(0)
 
 # 设置置信度阈值
 confidence_threshold = 0.25
